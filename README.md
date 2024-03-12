@@ -1,5 +1,5 @@
 # Intro to Java Workshop
-SP24 Intro to Java demo repository
+SP24 [Intro to Java](https://acmcsuf.com/java-intro) demo repository
 
 ## Install
 To check if you have Java installed on a Windows PC, search in the start bar for Java or type the following in Command Prompt (cmd.exe):
