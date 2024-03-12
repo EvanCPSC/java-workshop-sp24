@@ -1,6 +1,7 @@
 import java.util.ArrayList; //step 4
+import java.util.Scanner; //step 5
 
-public class FinishedMain {
+public class DemoNotes {
     public static void main(String[] args) {
         //from starter code
         System.out.println("Hello World!");
@@ -26,7 +27,7 @@ public class FinishedMain {
 
         //step 4: arraylists and conditions
         //note: <> must have class in them e.g. <Integer> <String>
-        ArrayList<Boolean> conds = new ArrayList<Boolean>();
+        ArrayList<Boolean> conds = new ArrayList<>();
         //adding and setting elements of an arraylist
         conds.add(false);
         conds.add(torf);
@@ -38,11 +39,16 @@ public class FinishedMain {
         // array and arraylist have different ways of getting the size
         System.out.println(arr.length + " " + conds.size());
 
-        //step 5: functions and static keyword
+        //step 5: input with scanners
+        @SuppressWarnings("resource") // vs code didnt like the scanner lol
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("pls put int");
+        arr[1] = scanner.nextInt();
+        //step 6: functions and static keyword
         printArr(arr);
     }
 
-    //step 5
+    //step 6
     /* note: static variables and functions must be used in a "static context"
       or called by a class rather than an object
       e.g. Math.random();
