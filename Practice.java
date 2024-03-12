@@ -8,6 +8,9 @@ import java.util.Scanner; //yw
  * The comments will guide you on how to
  * implement the program using the syntax
  * demonstrated in DemoNotes.java
+ * 
+ * Refer to FinishedPractice.java to check your code!
+ * 
  * glhf!
  */
 
@@ -31,7 +34,7 @@ public class Practice {
         //For each element in the array
             //set the elements to a random number up to the end number
                 //hint: you must cast Math.random() to an int
-        //return the filled array
+        //Return the filled array
 
 
     //Create a static method that returns nothing and will print an array

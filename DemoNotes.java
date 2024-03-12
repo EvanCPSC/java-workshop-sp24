@@ -33,7 +33,7 @@ public class DemoNotes {
         conds.add(false);
         conds.add(torf);
         //note: to cast you put the data type in parenthesis () before the number
-        int ran = ((int) Math.random() * 20) + 7;
+        int ran = (int) (Math.random() * 20) + 7;
         //note: Math.random() returns a double between 0 and 1, not including 1
         conds.add(ran < 7);
         conds.set(0, true);
