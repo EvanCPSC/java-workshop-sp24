@@ -18,11 +18,12 @@ public class DemoNotes {
         //note: substring does not include end index
 
         //step 3: arrays
-        int[] arr = {1, 2, 7}; // initialize array
+        int[] arr = {1, 2, 7}; // declare and initialize array
+        int[] arr2 = new int[3]; // create empty array
         System.out.println(arr[0]);
         System.out.println(arr[0] + arr[2]);
-        arr[0] = 3; // set array element
-        System.out.println(arr[0] + arr[2] < arr[1]);
+        arr2[0] = 3; // set array element
+        System.out.println(arr2[0] + arr[2] < arr[1]);
         System.out.println(arr); // prints address
 
         //step 4: arraylists and conditions
@@ -31,8 +32,12 @@ public class DemoNotes {
         //adding and setting elements of an arraylist
         conds.add(false);
         conds.add(torf);
-        conds.add(20 < 7);
+        //note: to cast you put the data type in parenthesis () before the number
+        int ran = ((int) Math.random() * 20) + 7;
+        //note: Math.random() returns a double between 0 and 1, not including 1
+        conds.add(ran < 7);
         conds.set(0, true);
+        //note: comparison operators similar to C++
         if ((conds.get(0) && conds.get(1)) || conds.get(2)) {
             System.out.println(conds); // prints arraylist
         }
