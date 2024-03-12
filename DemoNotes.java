@@ -42,7 +42,7 @@ public class DemoNotes {
         //step 5: input with scanners
         @SuppressWarnings("resource") // vs code didnt like the scanner lol
         Scanner scanner = new Scanner(System.in);
-        System.out.println("pls put int");
+        System.out.println("Enter an integer:");
         arr[1] = scanner.nextInt();
         //step 6: functions and static keyword
         printArr(arr);
